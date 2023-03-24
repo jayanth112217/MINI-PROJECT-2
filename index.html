@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code kar raha hae</title>
+    <style>
+     /*CSS reset*/
+     body{
+        font-family:'Aclonica';font-size: 22px;
+        color:white;
+        margin:0px;
+        padding:0px;
+        background: url("codebg.jpg");
+     }       
+     .left{
+        display:block;
+        position:absolute;
+        left:34px;
+        top:20px;
+     } 
+     .left img div{
+        text-align: center;
+        /* justify-content: center; */
+     }
+     .left img{
+        width:136px;
+        filter:invert(100%);
+     }
+     .left div{
+        text-align: center;
+     }
+     .mid{
+        display:block;
+        width:50%;
+        margin:20px auto;
+     }
+     .right{
+        position:absolute;
+        right:34px;
+        top:20px;
+        display:inline-block;
+     }
+     .navbar{
+        display: inline-block;
+     }
+     .navbar li{
+        display:inline-block;
+        font-size: 17px;
+     }
+     .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:34px 23px
+     }
+     .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color:grey;
+     }
+     .btn{
+        margin:0px 9px;
+        background-color: black;
+        color:white;
+        padding:4px 14px;
+        border:2ps solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family:'Aclonica';
+        cursor: pointer;
+     }
+     .btn:hover{
+        background-color: blueviolet;
+     }
+     .container{
+        /* border:2px solid red; */
+        margin:100px 200px;
+        padding:75px;
+        width:150px;
+        border-radius: 2px;
+        font-size: 20px;
+        justify-content: center;
+     }
+     .formgroup input{
+        font-family: 'Aclonica';
+        text-align: center;
+        justify-content: center;
+        display:block;
+        width:150px;
+        padding:17px;
+        border:2px solid black;
+        border-radius: 4px;
+        font-size: 14px;
+     }
+     .container h1{
+        font-size: 20px;
+        text-align: center;
+     }
+     .container button{
+        display:block;
+        width:auto;
+        margin:15px auto;
+     }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Jhonny Coding center</div>
+        </div>
+        <div class="mid">
+          <ul class="navbar">
+          <li><a href='#' class="active">Home</a></li>
+          <li><a href='#'>About Us</a></li>
+          <li><a href='#'>Coding myth</a></li>
+          <li><a href='#'>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="right">
+            <button class=" btn">Call us now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The coding competetion and refresh your skills</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="email" name="" placeholder="Enter your email-id">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Skils">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Experiance">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+</html>
